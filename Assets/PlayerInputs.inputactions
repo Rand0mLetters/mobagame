@@ -1,0 +1,133 @@
+{
+    "name": "PlayerInputs",
+    "maps": [
+        {
+            "name": "Camera_Controls",
+            "id": "e0fd4a34-c23d-451a-b5e5-599e56690b5a",
+            "actions": [
+                {
+                    "name": "Follow",
+                    "type": "Button",
+                    "id": "438bed02-0ada-4290-853c-4ce12d9cc409",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Center",
+                    "type": "Button",
+                    "id": "aedc3289-b2cd-4fb4-a6cb-b2408148f7ec",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "25f997e4-60ff-48b3-acda-183c32bd11da",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Follow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc8b6ed4-7ee9-430d-aa53-f04a56401a01",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Center",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player",
+            "id": "a923c4b1-45b3-4048-9eef-938d47d1419e",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "71914efb-3f17-4aa3-8acb-69e081d22d1b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "47ef3468-b40c-461a-aa91-1b99cb82b83c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Switch",
+                    "type": "Button",
+                    "id": "282ef6b5-d2a6-4cd8-9c1b-d12aa00268ca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "bf7870a6-c4ab-45f9-81b3-942a316eee37",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09613e10-212b-4498-8969-30cbd7d99a9e",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ced13af-23b5-4ca3-953a-00366aa4d006",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "Scale(factor=0)",
+                    "groups": "",
+                    "action": "Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac9b2965-b951-438f-ab7e-137b119cf482",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "Scale",
+                    "groups": "",
+                    "action": "Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

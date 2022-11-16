@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 191a5412a3ab25648bb9518b7ace4a19
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - floatingText: {fileID: 1167947534848922388, guid: ff439b176fa2087479711561bd4687bd, type: 3}
+  - healthBar: {instanceID: 0}
+  - nameDisplay: {instanceID: 0}
+  - anim: {instanceID: 0}
+  - agent: {instanceID: 0}
+  - col: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

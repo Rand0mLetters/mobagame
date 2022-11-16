@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Content Update
+  m_EditorClassIdentifier: 
+  m_GroupName: Content Update
+  m_Data:
+    m_SerializedData: []
+  m_GUID: fe40c8b55dd06f24ca3e68977c3b3740
+  m_SerializeEntries:
+  - m_GUID: 31eaf424455b4c8408b463cea4d214fc
+    m_Address: Assets/Scenes/Game/Global Volume Profile.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    - Dynamic
+  - m_GUID: f3efad5824abc914fa8895a262a2e8c6
+    m_Address: Assets/Scenes/Menu/Global Volume Profile.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Other
+  - m_GUID: 06d19096ce444a543a091c2bd8bbc711
+    m_Address: Assets/Scenes/ChampionDemo/Pause Menu.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    - Static
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 6f455bad9b7925d4cb4afb2774015c75, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: cc478b1cca178db4eaefa090714885b0, type: 2}
+    - {fileID: 11400000, guid: d311bc034677b4847a99eaa141f92aa4, type: 2}

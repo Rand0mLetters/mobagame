@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bf07c2ba689125840858262ce47ff581
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - anim: {instanceID: 0}
+  - agent: {instanceID: 0}
+  - movementEffect: {fileID: 4129891671578009053, guid: 6c5929fbd268e3644a922ecdd6e955dc, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
