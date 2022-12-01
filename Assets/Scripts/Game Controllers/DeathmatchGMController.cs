@@ -27,7 +27,7 @@ public class DeathmatchGMController : MonoBehaviourPunCallbacks, IPunObservable
         isArcadia = TeamController.instance.PlayerOnArcadia(PhotonNetwork.LocalPlayer.UserId);
     }
 
-    public void RegisterDeath(int playerNumber)
+    public void RegisterDeath(string playerNumber)
     {
         photonView.RPC("Point", RpcTarget.All, playerNumber);
     }

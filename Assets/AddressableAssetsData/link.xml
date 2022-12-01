@@ -1,13 +1,11 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="AlertController" preserve="all" />
     <type fullname="AnimatorSync" preserve="all" />
     <type fullname="AttackController" preserve="all" />
     <type fullname="AudioManager" preserve="all" />
     <type fullname="BuildingHealthController" preserve="all" />
     <type fullname="ButtonAnimationController" preserve="all" />
     <type fullname="CameraFollowLocalPlayer" preserve="all" />
-    <type fullname="ChampionDemoController" preserve="all" />
     <type fullname="CharacterSelectController" preserve="all" />
     <type fullname="ClassicGMController" preserve="all" />
     <type fullname="Consumable" preserve="all" />
@@ -20,6 +18,7 @@
     <type fullname="DestroyIfNotMine" preserve="all" />
     <type fullname="Entity" preserve="all" />
     <type fullname="FollowMouse" preserve="all" />
+    <type fullname="FPSCounter" preserve="all" />
     <type fullname="GameModeSelectController" preserve="all" />
     <type fullname="GameObjectPooler" preserve="all" />
     <type fullname="GameTime" preserve="all" />
@@ -45,34 +44,34 @@
     <type fullname="PostgameController" preserve="all" />
     <type fullname="PostgameData" preserve="all" />
     <type fullname="RoomCharactersController" preserve="all" />
-    <type fullname="SetAnimTrigger" preserve="all" />
     <type fullname="SpawnGameMode" preserve="all" />
     <type fullname="SwitchScenes" preserve="all" />
     <type fullname="TeamController" preserve="all" />
     <type fullname="TeamSpawnController" preserve="all" />
     <type fullname="TowerAttackController" preserve="all" />
     <type fullname="WaitingRoomController" preserve="all" />
-    <type fullname="GameModeData" preserve="nothing" serialized="true" />
+    <type fullname="XPController" preserve="all" />
+    <type fullname="CharacterData" preserve="nothing" serialized="true" />
+    <type fullname="CursorData" preserve="nothing" serialized="true" />
+    <type fullname="MAD" preserve="nothing" serialized="true" />
     <type fullname="MatchAttackData" preserve="nothing" serialized="true" />
     <type fullname="PlayerMatchData" preserve="nothing" serialized="true" />
-    <type fullname="SpawnObject" preserve="nothing" serialized="true" />
     <type fullname="AbilityUI" preserve="nothing" serialized="true" />
-    <type fullname="CursorData" preserve="nothing" serialized="true" />
+    <type fullname="GameModeData" preserve="nothing" serialized="true" />
     <type fullname="InventorySlotUI" preserve="nothing" serialized="true" />
     <type fullname="Lane" preserve="nothing" serialized="true" />
-    <type fullname="MAD" preserve="nothing" serialized="true" />
     <type fullname="PoolData" preserve="nothing" serialized="true" />
-    <type fullname="CharacterData" preserve="nothing" serialized="true" />
+    <type fullname="SpawnObject" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="PhotonUnityNetworking, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Photon.Pun.PhotonAnimatorView" preserve="all" />
     <type fullname="Photon.Pun.PhotonTransformViewClassic" preserve="all" />
     <type fullname="Photon.Pun.PhotonView" preserve="all" />
-    <type fullname="Photon.Pun.PhotonAnimatorView/SynchronizedLayer" preserve="nothing" serialized="true" />
-    <type fullname="Photon.Pun.PhotonAnimatorView/SynchronizedParameter" preserve="nothing" serialized="true" />
     <type fullname="Photon.Pun.PhotonTransformViewPositionModel" preserve="nothing" serialized="true" />
     <type fullname="Photon.Pun.PhotonTransformViewRotationModel" preserve="nothing" serialized="true" />
     <type fullname="Photon.Pun.PhotonTransformViewScaleModel" preserve="nothing" serialized="true" />
+    <type fullname="Photon.Pun.PhotonAnimatorView/SynchronizedLayer" preserve="nothing" serialized="true" />
+    <type fullname="Photon.Pun.PhotonAnimatorView/SynchronizedParameter" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
@@ -110,10 +109,8 @@
     <type fullname="UnityEngine.Rendering.Universal.Bloom" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.ChromaticAberration" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.DecalProjector" preserve="all" />
-    <type fullname="UnityEngine.Rendering.Universal.DepthOfField" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalCameraData" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalLightData" preserve="all" />
-    <type fullname="UnityEngine.Rendering.Universal.DepthOfFieldModeParameter" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
@@ -135,12 +132,12 @@
     <type fullname="TMPro.TMP_GlyphAdjustmentRecord" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_GlyphPairAdjustmentRecord" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_GlyphValueRecord" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/OnChangeEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/SelectionEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/SubmitEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/TextSelectionEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/TouchScreenKeyboardEvent" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.VisualEffectGraph.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.VFX.Utility.VFXPositionBinder" preserve="all" />
@@ -169,12 +166,14 @@
     <type fullname="UnityEngine.Cubemap" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.Light" preserve="all" />
+    <type fullname="UnityEngine.LightingSettings" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.LODGroup" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
     <type fullname="UnityEngine.MeshFilter" preserve="all" />
     <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.RenderSettings" preserve="all" />
@@ -187,6 +186,7 @@
     <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.ParticleSystem" preserve="all" />
@@ -215,6 +215,7 @@
     <type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="all" />
     <type fullname="UnityEngine.UI.Button" preserve="all" />
     <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
+    <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
     <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
     <type fullname="UnityEngine.UI.Image" preserve="all" />
     <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
@@ -222,13 +223,14 @@
     <type fullname="UnityEngine.UI.RawImage" preserve="all" />
     <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
     <type fullname="UnityEngine.UI.Slider" preserve="all" />
+    <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Canvas" preserve="all" />

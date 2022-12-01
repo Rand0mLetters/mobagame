@@ -5,13 +5,15 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public enum LANE {
-    MID = 0
+    BOTTOM = 0,
+    MID = 1,
+    TOP = 2,
 }
 
 [RequireComponent(typeof(Entity))]
 public class CreepBehaviourController : MonoBehaviourPun
 {
-    public Animator anim;
+    public AnimatorSync anim;
     public NavMeshAgent agent;
     public Collider col;
     public AnimationClip clip;
@@ -30,11 +32,13 @@ public class CreepBehaviourController : MonoBehaviourPun
     float lastAttackTime;
     public int curWaypointIndex = 0;
     bool arcadianLastFrame;
+    Vector3 posLastFrame;
 
 
     private void Awake() {
         myself = GetComponent<Entity>();
         attackTime = clip.length;
+        posLastFrame = transform.position;
     }
 
     void Update()
@@ -47,11 +51,15 @@ public class CreepBehaviourController : MonoBehaviourPun
             if(agent && agent.enabled) agent.destination = transform.position;
             return;
         }
-        if (currentTarget && !currentTarget.isDead && currentTarget.isArcadian != myself.isArcadian)
+        if (currentTarget && !currentTarget.CompareTag("Untagged") && currentTarget.isArcadian != myself.isArcadian)
         {
             float dist = Vector3.SqrMagnitude(transform.position - currentTarget.transform.position);
+            col.enabled = false;
             if (dist < attackRange * attackRange)
             {
+                agent.destination = posLastFrame;
+                posLastFrame = transform.position;
+                transform.LookAt(currentTarget.transform, Vector3.up);
                 anim.SetTrigger("Attack");
 
                 // attack
@@ -59,24 +67,17 @@ public class CreepBehaviourController : MonoBehaviourPun
                     lastAttackTime = Time.time;
                     currentTarget.SendMessage("TakeDamage", damage);
                 }
-            }else if(dist < unalertRadius * unalertRadius)
-            {
+            }else if(dist < unalertRadius * unalertRadius){
                 if(agent.enabled) agent.destination = currentTarget.transform.position;
                 anim.SetTrigger("Move");
-            }
-            else
-            {
+            }else{
                 currentTarget = null;
-                col.enabled = false;
                 anim.SetTrigger("Move");
-                if(agent.enabled) agent.destination = transform.position;
             }
-        }
-        else
-        {
+        }else{
             col.enabled = true;
             currentTarget = null;
-            if(agent.enabled) {
+            if(agent.enabled && waypoints.Length > 0) {
                 agent.destination = waypoints[curWaypointIndex].position;
                 if(Vector3.SqrMagnitude(transform.position - waypoints[curWaypointIndex].position) < 4) {
                     curWaypointIndex += 1;

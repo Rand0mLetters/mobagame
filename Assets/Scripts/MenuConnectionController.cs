@@ -10,7 +10,6 @@ public class MenuConnectionController : MonoBehaviourPunCallbacks, IConnectionCa
 {
     public string gameVersion = "v0.0.1b";
     public bool canPlay = false;
-    public AssetReference sceneIndex;
     public Button playButton;
     public GameModeData[] gameModes;
     public int sI;

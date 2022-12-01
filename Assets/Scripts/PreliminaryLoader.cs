@@ -16,6 +16,7 @@ public class PreliminaryLoader : MonoBehaviour
     public AssetReference scene;
     public Button btn;
     public Slider progressSlider;
+    public TextMeshProUGUI percentage;
     public TextMeshProUGUI btnText;
     public string[] labels;
     bool alreadyDownloaded = false;
@@ -66,10 +67,10 @@ public class PreliminaryLoader : MonoBehaviour
         while (downloadHandle.Status == AsyncOperationStatus.None) {
             float percentageComplete = downloadHandle.GetDownloadStatus().Percent;
             progressSlider.value = percentageComplete;
+            percentage.text = ((int) ((percentageComplete * 100f) + 0.5f)).ToString() + "%";
             yield return null;
         }
         Debug.Log(size);
-        // yield return downloadDependencies;
         PlayGame();
         btnText.text = ". . .";
         alreadyDownloaded = true;

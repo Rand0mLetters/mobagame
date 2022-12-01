@@ -7,7 +7,7 @@ public class TowerAttackController : MonoBehaviourPunCallbacks
     public Transform lightningArc;
     public Entity target;
     public float attackDuration;
-    public Collider col;
+    public SphereCollider col;
     Vector3 startPos;
     bool checkCollider;
     bool attacking = false;
@@ -37,7 +37,11 @@ public class TowerAttackController : MonoBehaviourPunCallbacks
     void Attack()
     {
         if(target && (target.CompareTag("Player") || target.CompareTag("Bot"))) {
-            StartCoroutine("ActuallyAttack");
+            float dist = Vector3.SqrMagnitude(transform.position - target.transform.position);
+            if(dist < col.radius * col.radius)
+                StartCoroutine("ActuallyAttack");
+            else
+                checkCollider = true;
         } else {
             checkCollider = true;
         }

@@ -13,46 +13,39 @@ public class SpawnObject
 
 public class MakeObjectRed : MonoBehaviourPunCallbacks
 {
+    Entity myself;
     public Renderer[] meshes;
-    public Material material;
+    public Material red;
+    public Material blue;
     [Header("=======")]
     public SpawnObject[] objs;
 
+    bool mineLastFrame = false;
+
     // Start is called before the first frame update
-    IEnumerator Start()
+    void Start()
     {
-        yield return new WaitForSeconds(0.1f);
-        bool objTeam = TeamController.instance ? TeamController.instance.PlayerOnArcadia(photonView.Owner.UserId) : false;
-        bool myTeam = TeamController.instance ? TeamController.instance.PlayerOnArcadia(PhotonNetwork.LocalPlayer.UserId) : true;
-        if(photonView.Owner.UserId != PhotonNetwork.LocalPlayer.UserId && objTeam != myTeam)
-        {
-            foreach(Renderer r in meshes)
-            {
-                try
-                {
-                    r.material = material;
-                }
-                catch
-                {
-                    try
-                    {
+        myself = GetComponent<Entity>();
+        mineLastFrame = !myself.isTeammate;
+        InvokeRepeating("Calculate", 0.3f, 1f);
+    }
+
+    void Calculate() {
+        if (myself.isTeammate != mineLastFrame) {
+            mineLastFrame = myself.isTeammate;
+            Material mat = myself.isTeammate ? blue : red;
+            foreach (Renderer r in meshes) {
+                try {
+                    r.material = mat;
+                } catch {
+                    try {
                         r.materials = new Material[1];
-                        r.materials[0] = material;
-                    }
-                    catch
-                    {
+                        r.materials[0] = mat;
+                    } catch {
                         Debug.Log("nICe tRY");
                     }
                 }
             }
-        }
-
-
-        bool spawnRed = photonView.Owner.UserId != PhotonNetwork.LocalPlayer.UserId && objTeam != myTeam;
-        foreach(SpawnObject obj in objs)
-        {
-            if (spawnRed) Instantiate(obj.red, obj.spawnPos.position, obj.spawnPos.rotation, obj.spawnPos);
-            else Instantiate(obj.blue, obj.spawnPos.position, obj.spawnPos.rotation, obj.spawnPos);
         }
     }
 }

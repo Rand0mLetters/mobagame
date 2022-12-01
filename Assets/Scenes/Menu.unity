@@ -1968,13 +1968,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ecf3a674edc9ef4e99ea33dc1fb5d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameVersion: v0.0.1b
+  gameVersion: 0.0.1
   canPlay: 0
-  sceneIndex:
-    m_AssetGUID: 15a3baceddaccf4418e585eb723a85fb
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
   playButton: {fileID: 1943045494}
   gameModes:
   - modeManager: {fileID: 8717824517450943660, guid: 775379629fd8dfb4b982967e8ac3add5, type: 3}

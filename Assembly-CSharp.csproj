@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2021_3_10;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2021_3_10;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;GRASSFLOW_SRP;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -58,16 +58,17 @@
   <ItemGroup>
     <Compile Include="Assets\Resources\Mage\Attacks\LightningBolt.cs" />
     <Compile Include="Assets\Scripts\Game Controllers\CreepBehaviourController.cs" />
-    <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
+    <Compile Include="Assets\You don&apos;t want to see this\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
+    <Compile Include="Assets\Scripts\Data\PassiveBuff.cs" />
     <Compile Include="Assets\Scripts\PreliminaryLoader.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerStatsDisplay.cs" />
     <Compile Include="Assets\Scripts\Utils\BetterTransformSync.cs" />
     <Compile Include="Assets\Scripts\Game Controllers\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Data\CharacterData.cs" />
-    <Compile Include="Assets\Scripts\PlayerControllers\AttackScripts\PlayerAttackController.cs" />
     <Compile Include="Assets\Scripts\Game Controllers\SpawnGameMode.cs" />
     <Compile Include="Assets\Scripts\PlayerControllers\PlayerGoldManager.cs" />
     <Compile Include="Assets\Scripts\PostgameController.cs" />
+    <Compile Include="Assets\Scripts\UI\ButtonAnimationController.cs" />
     <Compile Include="Assets\Scripts\AuthFlow\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerControllers\PlayerMovementController.cs" />
     <Compile Include="Assets\Scripts\PlayerControllers\PlayerHealthController.cs" />
@@ -85,13 +86,15 @@
     <Compile Include="Assets\Scripts\Utils\HideObjectInFog.cs" />
     <Compile Include="Assets\Scripts\ChampionDemoController.cs" />
     <Compile Include="Assets\Scripts\GameModeSelectController.cs" />
+    <Compile Include="Assets\Scripts\Environment\ReportCrash.cs" />
     <Compile Include="Assets\Scripts\Utils\DealDamage.cs" />
     <Compile Include="Assets\Scripts\MenuConnectionController.cs" />
     <Compile Include="Assets\Scripts\Game Controllers\AlertController.cs" />
     <Compile Include="Assets\Scripts\Utils\GotoTarget.cs" />
     <Compile Include="Assets\Scripts\Game Controllers\RoomCharactersController.cs" />
+    <Compile Include="Assets\Scripts\Environment\AudioManager.cs" />
     <Compile Include="Assets\Scripts\AuthFlow\PlayerDataController.cs" />
-    <Compile Include="Assets\Scripts\PlayerControllers\AttackScripts\PlayerAttackSwitchController.cs" />
+    <Compile Include="Assets\Smart FPS Counter\Scripts\test.cs" />
     <Compile Include="Assets\Scripts\Game Controllers\DeathmatchGMController.cs" />
     <Compile Include="Assets\Scripts\Utils\MenuCameraOrbit.cs" />
     <Compile Include="Assets\Scripts\AuthFlow\LaunchBrowser.cs" />
@@ -100,8 +103,10 @@
     <Compile Include="Assets\Scripts\Data\Ability.cs" />
     <Compile Include="Assets\Scripts\Data\PlayerMatchData.cs" />
     <Compile Include="Assets\Scripts\Game Controllers\CreepSpawnController.cs" />
+    <Compile Include="Assets\Stylized Water For URP\Demos\Buoyancy\BuoyantObject.cs" />
+    <Compile Include="Assets\Stylized Water For URP\Demos\Buoyancy\GerstnerWaveDisplacement.cs" />
     <Compile Include="Assets\Scripts\WaitingRoomController.cs" />
-    <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
+    <Compile Include="Assets\You don&apos;t want to see this\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\Scripts\Utils\DestroyIfNotMine.cs" />
     <Compile Include="Assets\Scripts\Utils\DestroyAfterTime.cs" />
     <Compile Include="Assets\Scripts\Data\PostgameData.cs" />
@@ -116,62 +121,135 @@
     <Compile Include="Assets\Scripts\Game Controllers\TeamController.cs" />
     <Compile Include="Assets\Scripts\Utils\SetAnimTrigger.cs" />
     <Compile Include="Assets\Scripts\Utils\SwitchScenes.cs" />
+    <Compile Include="Assets\Scripts\PlayerControllers\XPController.cs" />
+    <Compile Include="Assets\Smart FPS Counter\Scripts\FPSCounter.cs" />
+    <Compile Include="Assets\Scripts\PlayerControllers\PlayerBuffController.cs" />
     <Compile Include="Assets\Scripts\AuthFlow\LoginWithPlayFab.cs" />
     <Compile Include="Assets\Scripts\Game Controllers\CharacterSelectController.cs" />
     <Compile Include="Assets\Scripts\Environment\TowerAttackController.cs" />
     <Compile Include="Assets\Scripts\Utils\FollowMouse.cs" />
     <Compile Include="Assets\Scripts\PlayerControllers\CameraFollowLocalPlayer.cs" />
-    <Compile Include="Assets\Scripts\Environment\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\UI\ButtonAnimationController.cs" />
-    <Compile Include="Assets\Scripts\PlayerControllers\PlayerBuffController.cs" />
-    <Compile Include="Assets\Scripts\Data\PassiveBuff.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Water_Shader_WebGl.shader" />
-    <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Plants_Shader.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Opaque_Shader_VS.shader" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Opaque_Shader.shader" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Foliage_Shader.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Water_Shader.shader" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Flowers_Shader.shader" />
+    <None Include="Assets\GrassFlow\Resources\GrassFlow\GrassFlowCompute.compute" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Geometry Standard.shader" />
+    <None Include="Assets\You don&apos;t want to see this\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Stylized Water For URP\Shaders\Libraries\WaterFoam.hlsl" />
+    <None Include="Assets\JMO Assets\Cartoon FX (legacy)\Shaders\CFX3 Multiply Color.shader" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Deferred Surf_Tess Urp Srp Depth_Pass.shader" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Water_Shader_WebGl.shader" />
+    <None Include="Assets\You don&apos;t want to see this\Photon\PhotonUnityNetworking\changelog.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Glow.shader" />
+    <None Include="Assets\Stylized Water For URP\Scripts\UI\StylizedWaterSupport.uxml" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Ubershader.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_SETTINGS.cginc" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\GrassFlow\Shaders\GrassPrograms.cginc" />
+    <None Include="Assets\JMO Assets\Cartoon FX (legacy)\CartoonFX Free.txt" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Surf_Tess Standard.shader" />
+    <None Include="Assets\Stylized Water For URP\Scripts\UI\StylizedWaterAcknowledgements.uxml" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Plants_Shader.shader" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Geometry Standard Depth_Pass.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR.cginc" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Smart FPS Counter\Fonts\Roboto\LICENSE.txt" />
+    <None Include="Assets\You don&apos;t want to see this\Photon\PhotonLibs\WebSocket\websocket-sharp.dll" />
+    <None Include="Assets\GrassFlow\Resources\GrassFlow\GrassFlowSRPBasePragmas.txt" />
+    <None Include="Assets\GrassFlow\Shaders\GrassShaderRefresh.shader" />
+    <None Include="Assets\Stylized Water For URP\Scripts\UI\StylizedWaterAbout.uxml" />
+    <None Include="Assets\GrassFlow\Shaders\PaintHighlighter.shader" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Deferred Geometry Standard Depth_Pass.shader" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\GrassFlow\Resources\GrassFlow\GrassFlowPainter.compute" />
+    <None Include="Assets\GrassFlow\Shaders\GrassURPInclude.cginc" />
+    <None Include="Assets\Stylized Water For URP\Scripts\UI\StylizedWaterDetectIssues.uss" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Opaque_Shader_VS.shader" />
+    <None Include="Assets\Stylized Water For URP\Shaders\Libraries\WaterCaustics.hlsl" />
+    <None Include="Assets\Stylized Water For URP\Shaders\Libraries\WaterLighting.hlsl" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Opaque_Shader.shader" />
+    <None Include="Assets\Stylized Water For URP\Scripts\UI\StylizedWaterDetectIssues.uxml" />
+    <None Include="Assets\GrassFlow\Resources\GrassFlow\GrassFlowShaderPragmas.txt" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Foliage_Shader.shader" />
+    <None Include="Assets\GrassFlow\Shaders\GrassGeometry.cginc" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\Readme Cartoon FX Remaster FREE.txt" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\GrassFlow\Shaders\GrassDeferred.cginc" />
+    <None Include="Assets\Stylized Water For URP\Scripts\UI\StylizedWaterAbout.uss" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\You don&apos;t want to see this\Photon\PhotonLibs\changes-library.txt" />
+    <None Include="Assets\Stylized Water For URP\Scripts\UI\StylizedWaterAcknowledgements.uss" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Stylized Water For URP\Shaders\Libraries\Caustics\Caustics.shader" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Water_Shader.shader" />
     <None Include="Assets\AddressableAssetsData\link.xml" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Rock_Shader_VS.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
-    <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Plants_Shader_VS.shader" />
-    <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.dll" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Flowers_Shader_VS.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Rock_Shader.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\VS_indirect.cginc" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Foliage_Shader_VS.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Mesh_Buffer Urp Srp Depth_Pass.shader" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Flowers_Shader.shader" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Rock_Shader_VS.shader" />
+    <None Include="Assets\GrassFlow\Resources\GrassFlow\GrassFlowShaderTags.txt" />
+    <None Include="Assets\Stylized Water For URP\Scripts\UI\StylizedWaterToolbar.uss" />
+    <None Include="Assets\Stylized Water For URP\Scripts\UI\StylizedWaterSupport.uss" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\You don&apos;t want to see this\Photon\PhotonUnityNetworking\readme.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Prefabs\Texts\_Make your own text effect.txt" />
+    <None Include="Assets\Stylized Water For URP\Shaders\Libraries\WaterColor.hlsl" />
+    <None Include="Assets\GrassFlow\Shaders\GrassRenderPipelineHelpers.cginc" />
+    <None Include="Assets\Stylized Water For URP\Shaders\Libraries\StylizedWaterForURP.hlsl" />
+    <None Include="Assets\GrassFlow\Shaders\GrassFunc.cginc" />
+    <None Include="Assets\You don&apos;t want to see this\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Plants_Shader_VS.shader" />
+    <None Include="Assets\GrassFlow\Resources\GrassFlow\NoiseCompute.cginc" />
+    <None Include="Assets\GrassFlow\Resources\GrassFlow\GrassFlowPainter.shader" />
+    <None Include="Assets\You don&apos;t want to see this\Photon\PhotonLibs\Photon3Unity3D.dll" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Surf_Tess Standard Depth_Pass.shader" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Stylized Water For URP\Shaders\Libraries\WaterWaves.hlsl" />
+    <None Include="Assets\You don&apos;t want to see this\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Geometry Urp Srp Depth_Pass.shader" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Flowers_Shader_VS.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX (legacy)\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Mesh_Buffer Urp Srp.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Procedural Ring.shader" />
+    <None Include="Assets\GrassFlow\Shaders\GrassStructsVars.cginc" />
+    <None Include="Assets\You don&apos;t want to see this\Photon\PhotonLibs\Photon3Unity3D.xml" />
+    <None Include="Assets\Stylized Water For URP\Scripts\UI\StylizedWaterToolbar.uxml" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Rock_Shader.shader" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\VS_indirect.cginc" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_URP.cginc" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Surf_Tess Urp Srp Depth_Pass.shader" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\GrassFlow\Shaders\GrassTesselators.cginc" />
+    <None Include="Assets\GrassFlow\Shaders\GrassMeshBuffer.cginc" />
+    <None Include="Assets\You don&apos;t want to see this\Photon\PhotonUnityNetworking\link.xml" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Mesh_Buffer Standard.shader" />
+    <None Include="Assets\GrassFlow\Resources\GrassFlow\GrassFlowShaderTemplate.txt" />
+    <None Include="Assets\You don&apos;t want to see this\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Foliage_Shader_VS.shader" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Mesh_Buffer Standard Depth_Pass.shader" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Geometry Urp Srp.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Distortion.shader" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Deferred Geometry Urp Srp Depth_Pass.shader" />
+    <None Include="Assets\You don&apos;t want to see this\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\GrassFlow\Shaders\Variants\GF Forward Surf_Tess Standard Forward_Add Depth_Pass.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -418,10 +496,10 @@
       <HintPath>C:\Users\football8\Unity\2021.3.10f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
+      <HintPath>Assets\You don&apos;t want to see this\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
+      <HintPath>Assets\You don&apos;t want to see this\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.Unsafe.dll</HintPath>
@@ -994,6 +1072,14 @@
       <Project>{69C47C82-72C9-676D-5EC7-8279565D54B2}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
+    <ProjectReference Include="StylizedWaterForURP.csproj">
+      <Project>{FFC70F75-A779-9148-9F32-2B1A1BAEDD75}</Project>
+      <Name>StylizedWaterForURP</Name>
+    </ProjectReference>
+    <ProjectReference Include="StylizedWaterForURPEditor.csproj">
+      <Project>{BD3E735F-A1B1-1C5D-0D6B-4A4427932AF2}</Project>
+      <Name>StylizedWaterForURPEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
       <Project>{741DA8F2-A74A-B2B2-861C-DD3B25B8FF8B}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
@@ -1013,6 +1099,34 @@
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
       <Project>{AE1ACF59-DC08-C0C6-A846-7C3BD6BD9744}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="GrassHelper.csproj">
+      <Project>{1D4E737E-8E2F-FDA2-67CE-08290D4F0F3C}</Project>
+      <Name>GrassHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
+      <Project>{227AD3F2-67D2-C45F-B3E7-753AD0311F1E}</Project>
+      <Name>ToonyColorsPro.Demo.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXREditor.csproj">
+      <Project>{4A1F9365-A877-FAA3-4D4A-435100BE9639}</Project>
+      <Name>CFXREditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXR.WelcomeScreen.csproj">
+      <Project>{5AB22D8A-F9EF-8811-0165-4703BA39A9A3}</Project>
+      <Name>CFXR.WelcomeScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRRuntime.csproj">
+      <Project>{C51B7E99-354A-59C5-BA5B-48414AE815E3}</Project>
+      <Name>CFXRRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="KinoBloom.Runtime.csproj">
+      <Project>{9332843D-F789-3B9F-B0A6-D0FE489EB8BC}</Project>
+      <Name>KinoBloom.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRDemo.csproj">
+      <Project>{7A6A28E7-DC82-A9E8-962E-48445EFFAEAD}</Project>
+      <Name>CFXRDemo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

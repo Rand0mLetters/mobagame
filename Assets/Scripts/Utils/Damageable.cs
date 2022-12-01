@@ -14,7 +14,6 @@ public class Damageable : MonoBehaviourPunCallbacks
     public void TryTakeDamage(float damage, string ownerID)
     {
         if(TeamController.instance == null) {
-            Debug.Log("TeamController.instance is null at " + Time.time);
             gameObject.SendMessage("TakeDamage", damage);
             return;
         }

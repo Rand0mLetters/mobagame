@@ -46,7 +46,7 @@ public class LoginWithPlayFab : MonoBehaviour
 
     private void OnError(PlayFabError obj) {
         status.text = obj.ErrorMessage;
-        Debug.Log(obj.ToString());
+        Debug.LogError(obj.ToString());
     }
 
     void OnRegistered(RegisterPlayFabUserResult result) {

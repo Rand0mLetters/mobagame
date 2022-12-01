@@ -14,6 +14,17 @@ public class PlayerBuffController : MonoBehaviour
         instance = this;
     }
 
+    private void Start() {
+        XPController.instance.onLevelUp = OnLevelUp;
+    }
+
+    public void OnLevelUp(int newLevel) {
+        ChangeHealthBuff(100);
+        ChangeDamageBuff(10);
+        ChangeMovemementBuff(1);
+        ChangeManaBuff(25);
+    }
+
     public void ChangeDamageBuff(float change) { damage += change; }
 
     public void ChangeMovemementBuff(float change) { movement += change; }

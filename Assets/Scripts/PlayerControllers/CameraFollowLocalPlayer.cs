@@ -10,6 +10,8 @@ public class CameraFollowLocalPlayer : MonoBehaviour
     public float bounds = 50;
     bool follow = true;
     Vector3 curTarget;
+    public Vector3 camTopBounds = new Vector3(45, 0, 45);
+    public Vector3 camBottomBounds = new Vector3(-45, 0, -35);
     public static CameraFollowLocalPlayer instance;
 
     private void Awake()
@@ -63,7 +65,12 @@ public class CameraFollowLocalPlayer : MonoBehaviour
                 curTarget += Vector3.right;
             }
         }
-        transform.position = Vector3.Lerp(curTarget, transform.position, Time.deltaTime / 3);
+        transform.position = Vector3.Lerp(transform.position, curTarget, Time.deltaTime * 2);
+        transform.position = new Vector3(
+            Mathf.Clamp(transform.position.x, camBottomBounds.x, camTopBounds.x),
+            transform.position.y,
+            Mathf.Clamp(transform.position.z, camBottomBounds.z, camTopBounds.z)
+        );
     }
 
     public void Center()

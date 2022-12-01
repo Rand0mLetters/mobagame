@@ -2,8 +2,10 @@ using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 [System.Serializable]
 public class CursorData {
@@ -14,12 +16,14 @@ public class CursorData {
 public class AttackController : MonoBehaviourPunCallbacks
 {
     public static AttackController instance;
+
     [Header("Cursors")]
     public CursorData defaultCursor;
     public CursorData aimCursor;
 
     [Header("Base Attack")]
     public MAD baseAttack;
+    public AnimationClip baseAttackClip;
     public bool isMelee;
     public GameObject projectile;
     public bool isBaseAttacking = false;
@@ -31,6 +35,7 @@ public class AttackController : MonoBehaviourPunCallbacks
     List<GameObject> projectiles;
 
     [Header("Attacks")]
+    public AssetReference[] abilityRefs;
     public Ability[] abilities;
     public float[] cooldowns;
 
@@ -49,7 +54,18 @@ public class AttackController : MonoBehaviourPunCallbacks
     {
         myself = GetComponent<Entity>();
         projectiles = new List<GameObject>();
+        instance = this;
+    }
+
+    IEnumerator Start() {
+        abilities = new Ability[abilityRefs.Length];
         cooldowns = new float[abilities.Length];
+        for (int i = 0; i < abilityRefs.Length; i++) {
+            AsyncOperationHandle<Ability> a = Addressables.LoadAssetAsync<Ability>(abilityRefs[i]);
+            yield return a;
+            abilities[i] = a.Result;
+        }
+        PlayerStatsDisplay.instance.UpdateAbilityUI();
     }
 
 
@@ -57,11 +73,11 @@ public class AttackController : MonoBehaviourPunCallbacks
     {
         if (!myself.isMine) return;
         if(myself.isDead) return;
-        if (lastAttackTime + baseAttack.data.clip.length > Time.time) {
+        if (lastAttackTime + baseAttackClip.length > Time.time) {
             agent.destination = transform.position;
         }
         if (target && !target.isDead) {
-            transform.LookAt(target.transform);
+            transform.LookAt(target.transform, Vector3.up);
             if (target.isTeammate) {
                 agent.destination = target.transform.position - target.transform.forward * 2;
             } else if(Vector3.SqrMagnitude(transform.position - target.transform.position) < range * range){
@@ -99,12 +115,13 @@ public class AttackController : MonoBehaviourPunCallbacks
                 projectiles.Clear();
             }
         }
-        if(lastAttackTime + baseAttack.data.clip.length < Time.time) {
+        if(lastAttackTime + baseAttackClip.length < Time.time) {
             canAttack = true;
         }
 
         if (!myself.isDead) {
             for(int i = 0; i < abilities.Length; i++) {
+                if (abilities[i] == null) continue;
                 bool keyDown = Input.GetKeyDown(abilities[i].attackKey);
                 if (keyDown) {
                     if (cooldowns[i] <= 0 && PlayerManaController.instance.HasEnoughMana(abilities[i].manaCost)) {
@@ -112,11 +129,9 @@ public class AttackController : MonoBehaviourPunCallbacks
                     } else if(cooldowns[i] > 0){
                         if (AudioManager.instance) AudioManager.instance.PlaySound(errorSound);
                         if (AlertController.instance) AlertController.instance.Alert("Ability not ready!");
-                        Debug.Log("Can't use \"" + abilities[i].abilityName + "\"! Ability is still on cooldown, with " + cooldowns[i] + " seconds remaining!");
                     } else {
                         if (AudioManager.instance) AudioManager.instance.PlaySound(errorSound);
                         if (AlertController.instance) AlertController.instance.Alert("Not enough mana!");
-                        Debug.Log("Can't use \"" + abilities[i].abilityName + "\"! Not enough mana to use ability: need " + abilities[i].manaCost + ", has: " + PlayerManaController.instance.mana);
                     }
                 }
                 
@@ -144,7 +159,7 @@ public class AttackController : MonoBehaviourPunCallbacks
     void GiveMoney(Entity e) {
         e.hasGivenReward = true;
         PlayerGoldManager.instance.AddMoney((int) e.type);
-        Debug.Log("Gived player " + (int) e.type + " gold for killing entity of type " + e.type);
+        XPController.instance.UpdateLocalPlayerXP((int) e.type);
     }
 
     #region INPUTS
@@ -155,6 +170,7 @@ public class AttackController : MonoBehaviourPunCallbacks
             Vector2 mousePosition = new Vector2(Mouse.current.position.x.ReadValue(), Mouse.current.position.y.ReadValue());
             Ray ray = Camera.main.ScreenPointToRay(mousePosition);
             if(Physics.Raycast(ray, out hit, 1000, mask.value, QueryTriggerInteraction.Ignore)) {
+                if (hit.collider.gameObject.Equals(gameObject)) return;
                 Entity e = hit.collider.gameObject.GetComponent<Entity>();
                 if (e != null) {
                     target = e;

@@ -12,7 +12,6 @@ public class LightningBolt : Ability
     System.Action<Ability> callback;
 
     public override void Activate(GameObjectPooler pooler, System.Action<Ability> cb) {
-        Debug.Log("Activated lightning bolt at " + Time.time);
         p = pooler;
         callback = cb;
         aim = p.Instantiate(aimIndicator);

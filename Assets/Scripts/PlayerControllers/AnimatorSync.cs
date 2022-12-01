@@ -8,16 +8,11 @@ public class AnimatorSync : MonoBehaviourPunCallbacks, IPunObservable
     public Animator anim;
     public bool isMine = false;
     public string lastTrigger;
-    AnimatorControllerParameter[] parameters;
 
-    void Awake() {
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
         isMine = photonView.Owner.UserId == PhotonNetwork.LocalPlayer.UserId;
-        parameters = anim.parameters;
-    }
-
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        if(stream.IsWriting && isMine)
+        if (stream.IsWriting && isMine)
         {
             stream.SendNext(lastTrigger);
         }else if(!stream.IsWriting && !isMine)
@@ -34,16 +29,10 @@ public class AnimatorSync : MonoBehaviourPunCallbacks, IPunObservable
         lastTrigger = trigger;
     }
 
-    public void SetFloat(string varName, float val) {
-        anim.SetFloat(varName, val, .1f, Time.deltaTime);
-    }
-
-    private void ResetAllTriggers()
-    {
-        foreach (AnimatorControllerParameter param in parameters)
-        {
-            if (param.type == AnimatorControllerParameterType.Trigger)
-            {
+    private void ResetAllTriggers(){
+        // anim is null (lol)
+        foreach (AnimatorControllerParameter param in anim.parameters){
+            if (param.type == AnimatorControllerParameterType.Trigger){
                 anim.ResetTrigger(param.name);
             }
         }

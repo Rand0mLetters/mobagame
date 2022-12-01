@@ -16,6 +16,7 @@ public class TeamSpawnController : MonoBehaviourPunCallbacks
     public GameObject tower;
 
     int newOwner;
+    string playerPath;
 
     public static TeamSpawnController instance;
 
@@ -23,6 +24,8 @@ public class TeamSpawnController : MonoBehaviourPunCallbacks
     {
         if (instance) Destroy(this);
         else instance = this;
+        CharacterData playerChar = RoomCharactersController.instance.GetCharacterOfPlayer(PhotonNetwork.LocalPlayer.UserId);
+        playerPath = playerChar.character.name + "/" + playerChar.character.name;
     }
 
     IEnumerator Start()
@@ -48,8 +51,7 @@ public class TeamSpawnController : MonoBehaviourPunCallbacks
         {
             spawnPoint = GetSpawnPoint(xanaduSpawns);
         }
-        CharacterData playerChar = RoomCharactersController.instance.GetCharacterOfPlayer(playerNumber);
-        PhotonNetwork.Instantiate(playerChar.character.name + "/" + playerChar.character.name, spawnPoint.position, spawnPoint.rotation);
+        PhotonNetwork.Instantiate(playerPath, spawnPoint.position, spawnPoint.rotation);
     }
 
     public void SpawnArcadiaTowers()

@@ -7,24 +7,24 @@ public class DestroyIfNotMine : MonoBehaviourPunCallbacks
 {
     public MonoBehaviour[] components;
     public GameObject[] gos;
-    IEnumerator Start()
+    Entity myself;
+    void Start()
     {
-        yield return new WaitForEndOfFrame();
-        yield return new WaitForEndOfFrame();
-        yield return new WaitForEndOfFrame();
-        yield return new WaitForEndOfFrame();
-        yield return new WaitForEndOfFrame();
-        if (photonView.Owner.UserId != PhotonNetwork.LocalPlayer.UserId)
-        {
-            foreach(MonoBehaviour mb in components)
-            {
-                Destroy(mb);
+        myself = GetComponent<Entity>();
+    }
+
+    private void Update() {
+        SetStuffInacive(myself.isMine);
+    }
+
+    void SetStuffInacive(bool active) {
+        if (photonView.Owner.UserId != PhotonNetwork.LocalPlayer.UserId) {
+            foreach (MonoBehaviour mb in components) {
+                mb.enabled = active;
             }
-            foreach (GameObject go in gos)
-            {
-                Destroy(go);
+            foreach (GameObject go in gos) {
+                go.SetActive(active);
             }
         }
-        Destroy(this);
     }
 }

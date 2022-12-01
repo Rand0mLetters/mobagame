@@ -1431,7 +1431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d04e036b218516b42b0dcdc2da7c91c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 1000
   isCapital: 0
   healthBar: {fileID: 4289609100755175209}
   isArcadian: 0
@@ -1480,7 +1480,8 @@ MonoBehaviour:
   - {fileID: 4127454109779168658}
   - {fileID: 6772728947392332396}
   - {fileID: 215958014309919196}
-  material: {fileID: 2100000, guid: 894fd60f667bb0347aa8cbc9b9d7d5cf, type: 2}
+  red: {fileID: 2100000, guid: 894fd60f667bb0347aa8cbc9b9d7d5cf, type: 2}
+  blue: {fileID: 2100000, guid: f6e6d0ad33c720c4e8952f8f29d8f022, type: 2}
   objs: []
 --- !u!114 &8426262996744200801
 MonoBehaviour:
@@ -1844,7 +1845,7 @@ MonoBehaviour:
   damage: 5
   recurring: 1
   canDamageLocalPlayer: 0
-  repeatTime: 0.1
+  repeatTime: 0.01
 --- !u!65 &2718879291829504554
 BoxCollider:
   m_ObjectHideFlags: 0

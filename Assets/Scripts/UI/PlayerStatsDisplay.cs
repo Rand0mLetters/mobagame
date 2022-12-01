@@ -23,6 +23,8 @@ public class InventorySlotUI {
 
 public class PlayerStatsDisplay : MonoBehaviour
 {
+    public static PlayerStatsDisplay instance;
+
     [Header("Random")]
     public TextMeshProUGUI pingDisplay;
 
@@ -43,24 +45,23 @@ public class PlayerStatsDisplay : MonoBehaviour
     public Sprite emptySlot;
     public InventorySlotUI[] inventorySlots;
 
+    [Header("XP")]
+    public TextMeshProUGUI levelDisplay;
+    public Image circleXPThing;
+
+    private void Awake() {
+        instance = this;
+    }
+
     private void Start() {
         UpdateInventoryUI(new List<Item>());
-        for (int i = 0; i < abilities.Length; i++) {
-            if (i >= AttackController.instance.abilities.Length) {
-                abilities[i].go.SetActive(false);
-                continue;
-            } else {
-                if (AttackController.instance.abilities[i].icon) {
-                    abilities[i].icon.sprite = AttackController.instance.abilities[i].icon;
-                }
-            }
-        }
+        XPController.instance.onChange = OnXPChanged;
     }
 
     private void Update() {
-        pingDisplay.text = "Ping: " + PhotonNetwork.GetPing();
+        pingDisplay.text = PhotonNetwork.GetPing().ToString();
         if (PlayerHealthController.instance) {
-            healthDisplay.text = (int)(PlayerHealthController.instance.health + 0.5f) + " / " + PlayerBuffController.instance.health;
+            healthDisplay.text = (int)(PlayerHealthController.instance.health + 0.5f) + "/" + PlayerBuffController.instance.health;
             float percentage = PlayerHealthController.instance.health / PlayerBuffController.instance.health;
             if (percentage < 0) percentage = 0;
             healthBar.value = percentage;
@@ -82,28 +83,43 @@ public class PlayerStatsDisplay : MonoBehaviour
         }
         if (PlayerManaController.instance) {
             manaBar.value = PlayerManaController.instance.mana / PlayerBuffController.instance.mana;
-            manaDisplay.text = (int) (PlayerManaController.instance.mana + 0.5f) + " / " + PlayerBuffController.instance.mana;
+            manaDisplay.text = (int) (PlayerManaController.instance.mana + 0.5f) + "/" + PlayerBuffController.instance.mana;
         }
-        if (AttackController.instance) {
-            for(int i = 0; i < abilities.Length; i++) {
-                if(i >= AttackController.instance.abilities.Length) {
-                    abilities[i].go.SetActive(false);
-                    continue;
-                }
-                if (AttackController.instance.cooldowns[i] >= 0) {
-                    abilities[i].cooldownText.text = ((int) (AttackController.instance.cooldowns[i] + 0.5f)).ToString();
-                    abilities[i].radialSpinThing.fillAmount = AttackController.instance.cooldowns[i] / AttackController.instance.abilities[i].cooldown;
-                } else {
-                    abilities[i].cooldownText.text = "";
-                    abilities[i].radialSpinThing.fillAmount = 0;
-                }
-            }
-        }
+        UpdateAbilityUI();
+        
     }
 
     public void UpdateInventoryUI(List<Item> items) {
         for(int i = 0; i < inventorySlots.Length; i++) {
             inventorySlots[i].SetImage(i < items.Count ? items[i].sprite : emptySlot);
         }
+    }
+
+    public void UpdateAbilityUI() {
+        for (int i = 0; i < abilities.Length; i++) {
+            if (i >= AttackController.instance.abilities.Length) {
+                abilities[i].go.SetActive(false);
+                continue;
+            }
+            if (AttackController.instance.cooldowns[i] >= 0) {
+                abilities[i].cooldownText.text = ((int) (AttackController.instance.cooldowns[i] + 0.5f)).ToString();
+                if (AttackController.instance.abilities[i]) {
+                    abilities[i].radialSpinThing.fillAmount = AttackController.instance.cooldowns[i] / AttackController.instance.abilities[i].cooldown;
+                }
+            } else {
+                abilities[i].cooldownText.text = "";
+                abilities[i].radialSpinThing.fillAmount = 0;
+            }
+        }
+    }
+
+    public void OnXPChanged(int newXP) {
+        int modulo = newXP % 100;
+        int level = (newXP - modulo) / 100;
+        if(level > XPController.instance.level) {
+            XPController.instance.onLevelUp(level);
+        }
+        levelDisplay.text = level.ToString();
+        circleXPThing.fillAmount = modulo / 100.0f;
     }
 }

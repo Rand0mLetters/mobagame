@@ -48,7 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   delay: 0.25
-  bounds: 50
+  bounds: 100
+  camTopBounds: {x: 45, y: 0, z: 47}
+  camBottomBounds: {x: -45, y: 0, z: -40}
 --- !u!114 &4070271326018955812
 MonoBehaviour:
   m_ObjectHideFlags: 0

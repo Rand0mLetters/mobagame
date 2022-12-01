@@ -7,6 +7,8 @@ TagManager:
   - Terrain
   - Building
   - Bot
+  - fow
+  - Canvas
   layers:
   - Default
   - TransparentFX

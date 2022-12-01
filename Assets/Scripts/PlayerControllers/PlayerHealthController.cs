@@ -38,7 +38,6 @@ public class PlayerHealthController : MonoBehaviourPunCallbacks, IPunObservable
 
     private void Update()
     {
-        //oh no
         UpdateDisplay();
         if (myself.isDead)
         {
@@ -149,7 +148,7 @@ public class PlayerHealthController : MonoBehaviourPunCallbacks, IPunObservable
         {
             if (DeathmatchGMController.instance)
             {
-                DeathmatchGMController.instance.RegisterDeath(PhotonNetwork.LocalPlayer.ActorNumber);
+                DeathmatchGMController.instance.RegisterDeath(PhotonNetwork.LocalPlayer.UserId);
             }
             if (TeamSpawnController.instance) TeamSpawnController.instance.SpawnPlayer(PhotonNetwork.LocalPlayer.UserId);
             if (!TeamSpawnController.instance) ChampionDemoController.instance.SpawnBot(pos, rot);

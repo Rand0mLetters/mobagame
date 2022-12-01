@@ -17,9 +17,11 @@ public class CreepSpawnController : MonoBehaviourPun
     public Lane[] lanes;
     public static CreepSpawnController instance;
     int newOwner;
+    string path;
 
     private void Awake() {
         instance = this;
+        path = "Bots/" + creep.name;
     }
 
     void Start()
@@ -35,7 +37,7 @@ public class CreepSpawnController : MonoBehaviourPun
     {
         for(int i = 0; i < lanes.Length; i++) {
             foreach(Transform t in lanes[i].arcadiaCreepSpawns) {
-                GameObject go = PhotonNetwork.InstantiateRoomObject("Bots/" + creep.name, t.position, t.rotation);
+                GameObject go = PhotonNetwork.InstantiateRoomObject(path, t.position, t.rotation);
                 go.GetComponent<PhotonView>().TransferOwnership(newOwner);
                 // set creep properties
                 CreepBehaviourController controller = go.GetComponent<CreepBehaviourController>();
@@ -47,7 +49,7 @@ public class CreepSpawnController : MonoBehaviourPun
     void SpawnXanaduCreeps() {
         for(int i = 0; i < lanes.Length; i++){ 
             foreach(Transform spawn in lanes[i].xanaduCreepSpawns) {
-                GameObject go = PhotonNetwork.InstantiateRoomObject("Bots/" + creep.name, spawn.position, spawn.rotation);
+                GameObject go = PhotonNetwork.InstantiateRoomObject(path, spawn.position, spawn.rotation);
                 // set creep properties.
                 CreepBehaviourController controller = go.GetComponent<CreepBehaviourController>();
                 controller.SetLane((LANE) i);

@@ -15,28 +15,53 @@ MonoBehaviour:
   m_GroupName: Content Update
   m_Data:
     m_SerializedData: []
-  m_GUID: fe40c8b55dd06f24ca3e68977c3b3740
+  m_GUID: 3bd2261c56893004ab0fcfed37ab477b
   m_SerializeEntries:
+  - m_GUID: 39fe1c43778f0734dad75d1f4306a5f7
+    m_Address: Assets/Scenes/ChampionSelect.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dynamic
+  - m_GUID: afc0828959d1f924b9f46994af1da246
+    m_Address: Assets/Scenes/Game.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dynamic
+  - m_GUID: b037c63d50a0ab1479273b46614963f0
+    m_Address: Assets/Scenes/TeamAssignment.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Dynamic
   - m_GUID: 31eaf424455b4c8408b463cea4d214fc
     m_Address: Assets/Scenes/Game/Global Volume Profile.asset
     m_ReadOnly: 0
     m_SerializedLabels:
-    - default
     - Dynamic
+    - Static
+  - m_GUID: 3b3ed3ca26a23eb4b8c7c83b1eca4fae
+    m_Address: Assets/Scenes/Login.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Static
+  - m_GUID: 9fc0d4010bbf28b4594072e72b8655ab
+    m_Address: Assets/Scenes/Menu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Static
+  - m_GUID: ac7a53508eb68994985f05e181c23316
+    m_Address: Assets/Scenes/POSTGAME.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Static
   - m_GUID: f3efad5824abc914fa8895a262a2e8c6
     m_Address: Assets/Scenes/Menu/Global Volume Profile.asset
     m_ReadOnly: 0
     m_SerializedLabels:
     - Other
-  - m_GUID: 06d19096ce444a543a091c2bd8bbc711
-    m_Address: Assets/Scenes/ChampionDemo/Pause Menu.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - default
-    - Static
+    - Dynamic
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6f455bad9b7925d4cb4afb2774015c75, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: cc478b1cca178db4eaefa090714885b0, type: 2}
-    - {fileID: 11400000, guid: d311bc034677b4847a99eaa141f92aa4, type: 2}
+    - {fileID: 11400000, guid: 7366bc3179ee13a4187d92f901299ec3, type: 2}
+    - {fileID: 11400000, guid: 476ba74971e5ee24da2de985bf3b8e20, type: 2}

@@ -6465,7 +6465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d04e036b218516b42b0dcdc2da7c91c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 500
   isCapital: 1
   healthBar: {fileID: 1114227631094732823}
   isArcadian: 0
@@ -6538,7 +6538,8 @@ MonoBehaviour:
   - {fileID: 2733961701217023929}
   - {fileID: 3409112567421620021}
   - {fileID: 1513241050}
-  material: {fileID: 2100000, guid: 894fd60f667bb0347aa8cbc9b9d7d5cf, type: 2}
+  red: {fileID: 2100000, guid: 894fd60f667bb0347aa8cbc9b9d7d5cf, type: 2}
+  blue: {fileID: 2100000, guid: f6e6d0ad33c720c4e8952f8f29d8f022, type: 2}
   objs:
   - spawnPos: {fileID: 2096504582409768803}
     blue: {fileID: 2946120671804847152, guid: 5be514b4c6c73694b8a7ffb0896c79f2, type: 3}

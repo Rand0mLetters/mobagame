@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
-  m_DefaultGroup: 4847cee295b909e43bfa1285a3569bf9
+  m_DefaultGroup: 2630f8d419d4bdf4f89be580286a7c8e
   m_CachedHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -31,7 +31,7 @@ MonoBehaviour:
   m_DisableVisibleSubAssetRepresentations: 0
   m_ShaderBundleNaming: 0
   m_ShaderBundleCustomNaming: 
-  m_MonoScriptBundleNaming: 0
+  m_MonoScriptBundleNaming: 1
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
     m_Id: 81f3e0d7c0eba654ebfd00bbba850a83
@@ -42,10 +42,11 @@ MonoBehaviour:
   m_overridePlayerVersion: 
   m_GroupAssets:
   - {fileID: 11400000, guid: 96bf77a23bd5b0f44bed89f8bbd4626e, type: 2}
-  - {fileID: 11400000, guid: 29fa80f3653946642a313c34a6bc33e6, type: 2}
-  - {fileID: 11400000, guid: fa9381eaba235204585fbeb475696d40, type: 2}
-  - {fileID: 11400000, guid: 8f09a2e93b7e78a49850920bc2c62068, type: 2}
-  - {fileID: 11400000, guid: 8c73842697d1c4a429b23da6d286f068, type: 2}
+  - {fileID: 11400000, guid: b6273d1934f30974ab880260f16927d4, type: 2}
+  - {fileID: 11400000, guid: 1b440fb4f0ea07644841a58142473a81, type: 2}
+  - {fileID: 11400000, guid: 9c9ca646dc0f31141977064b474e0e83, type: 2}
+  - {fileID: 11400000, guid: 91577ed5731e0244bbafc021d7639ea4, type: 2}
+  - {fileID: 11400000, guid: 3a4af5e207d01934a93d0dea6ea94091, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -124,7 +125,7 @@ MonoBehaviour:
           m_Key: ContentRoot
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Boolean
-          m_Data: False
+          m_Data: True
           m_Key: IsEnabled
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.String
